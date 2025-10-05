@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Портфолио на Пламена</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about.html">За мен</a></li>
+                <li><a href="education.html">Образование и опит</a></li>
+                <li><a href="projects.html">Проекти</a></li>
+                <li><a href="contact.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Свържете се с мен</h1>
+        
+        <div class="two-columns">
+            <div class="column">
+                <h2>Форма за контакт</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Име</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Имейл</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Съобщение</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Съгласен съм с условията за поверителност</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Изпрати съобщение</button>
+                </form>
+            </div>
+            
+            <div class="column">
+                <h2>Други начини за връзка</h2>
+                <div class="contact-info">
+                    <p><strong>Имейл:</strong> plamenastefanova16@gmail.com</p>
+                    <p><strong>Телефон:</strong> +359 888 123 456</p>
+                    <p><strong>Адрес:</strong> Ботевград, България</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <h2>Локация</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46616.91922196568!2d23.747338!3d42.904412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ab0027d23bff0b%3A0x400a01269bf6360!2z0JHQvtC70YzRgdC60LDRjw!5e0!3m2!1sbg!2sbg!4v1725289050000!5m2!1sbg!2sbg" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/p_stefanovaa/">Instagram</a>
+            </div>
+            <p>&copy; 2024 Пламена. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
